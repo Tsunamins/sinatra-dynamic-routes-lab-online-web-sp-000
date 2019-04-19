@@ -42,7 +42,9 @@ class App < Sinatra::Base
     
     binding.pry
     
+    
     if @operation == "+"
+      get '/add/:number1/:number2'
       answer = @number1 + @number2 
       
       elsif
