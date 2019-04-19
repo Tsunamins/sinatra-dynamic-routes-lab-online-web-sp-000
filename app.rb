@@ -49,6 +49,19 @@ class App < Sinatra::Base
       answer = @number1 + @number2 
       answer.to_s
       elsif
+      @operation == "-"
+      answer = @number1 - @number2 
+      answer.to_s
+      elsif
+      @operation == "*"
+      answer = @number1 * @number2 
+      answer.to_s
+    else
+      @operation == "/"
+      answer = @number1 / @number2 
+      answer.to_s
+    end
+      
     
     
     
