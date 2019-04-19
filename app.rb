@@ -19,12 +19,7 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     
     @phrase * @number
-    # i = 0 
-    # while i < @number 
-    #   @phrase
-    # @number.times do 
-    #   @phrase 
-    # end 
+   
   end 
     
   
@@ -45,23 +40,24 @@ class App < Sinatra::Base
     @number1 = params[:number1].to_i 
     @number2 = params[:number2].to_i
     
+    
     if @operation == "+"
       answer = @number1 + @number2 
-      answer.to_s
+      
       elsif
       @operation == "-"
       answer = @number1 - @number2 
-      answer.to_s
+      
       elsif
       @operation == "*"
       answer = @number1 * @number2 
-      answer.to_s
+      
     else
       @operation == "/"
       answer = @number1 / @number2 
-      answer.to_s
-    end
       
+    end
+      answer.to_s 
     
     
     
