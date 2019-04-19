@@ -43,20 +43,20 @@ class App < Sinatra::Base
     binding.pry
     
     
-    if @operation == "+"
-      get '/add/:number1/:number2'
+    if @operation == "add"
+      
       answer = @number1 + @number2 
       
       elsif
-      @operation == "-"
+      @operation == "subtract"
       answer = @number1 - @number2 
       
       elsif
-      @operation == "*"
+      @operation == "multiply"
       answer = @number1 * @number2 
       
     else
-      @operation == "/"
+      @operation == "divide"
       answer = @number1 / @number2 
       
     end
