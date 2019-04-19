@@ -43,9 +43,15 @@ class App < Sinatra::Base
     @operation = params[:operation]
     
     @number1 = params[:number1].to_i 
-    @number2 = params[:number2].to_i 
-    answer = @number1 + @number2 
-    answer.to_s
+    @number2 = params[:number2].to_i
+    
+    if @operation == "+"
+      answer = @number1 + @number2 
+      answer.to_s
+      elsif
+    
+    
+    
   end 
   
 end
